@@ -20,11 +20,11 @@ def three_even? (list)
     end
 end
 
-puts three_even?([2, 1, 3, 5])
-puts three_even?([2, 4, 12, 5])
-puts three_even?([2, 1, 4, 6])
-puts three_even?([1, 4, 6, 4])
-puts three_even?([])
+# puts three_even?([2, 1, 3, 5])
+# puts three_even?([2, 4, 12, 5])
+# puts three_even?([2, 1, 4, 6])
+# puts three_even?([1, 4, 6, 4])
+# puts three_even?([])
 
 def bigger_two (list1, list2)
     sum1 = list1[0] + list1[1]
@@ -36,6 +36,22 @@ def bigger_two (list1, list2)
     end
 end
 
-print bigger_two([1, 2], [3, 4])
-print bigger_two([1, 7], [4, 4])
+# print bigger_two([1, 2], [3, 4])
+# print bigger_two([1, 7], [4, 4])
 
+def series_up (n)
+    list = []
+    series = 1
+    n.times do |i|
+        series.times do |s|
+            list.push(s+1)
+        end
+        series += 1
+    end
+    return list
+end
+
+print series_up(1) 
+print series_up(2)
+print series_up(3)
+print series_up(4)
